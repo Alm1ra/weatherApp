@@ -72,7 +72,14 @@ function show_weather(data) {
     document.getElementById("status-img").src = './img/' + images[cond];
 }
 
-q = 'Warsaw'
-url = 'http://api.weatherapi.com/v1/current.json?key=31b839f77ee44650bfb92525230308&q='+q
-getapi(url);
+const locationForm = document.getElementById('searchBar');
+
+locationForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const userInput = document.getElementById('bar').value;
+    
+    q = userInput
+    url = 'http://api.weatherapi.com/v1/current.json?key=31b839f77ee44650bfb92525230308&q='+q
+    getapi(url);
+  });
 
