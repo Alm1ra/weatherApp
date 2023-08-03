@@ -3,6 +3,7 @@
 body {
     font-family: 'Montserrat', sans-serif !important;
     margin: 0;
+    background-color: #004052;
 }
 
 #header {
@@ -16,13 +17,13 @@ body {
 }
 
 #icon {
-    width: 5rem;
+    width: 6rem;
     padding: 1rem;
 }
 
 h1 {
     color: #6fbace;
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 
 #searchBar {
@@ -42,11 +43,6 @@ h1 {
     width: 25rem;
     
 }
-
-/*.fas {
-    font-size: 1.8rem;
-    width: 4.5rem;
-}*/
 
 #send-loc {
     font-size: 1.8rem;
@@ -70,4 +66,46 @@ h1 {
 
 #content {
     background-color: #004052;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+#weather {
+    margin: 3rem;
+    width: 30rem;
+    height: 25rem;
+    background-color: #00607A;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px 10px 10px 10px;
+    
+}
+
+#location {
+    font-size: 3.2rem;
+    margin-top: 4.3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+#weather-stat {
+    display: flex;
+    justify-content: center;
+}
+
+#status-img {
+    height: 10rem;
+}
+
+#status-info {
+    width: 16rem;
+    text-align: center;
+    color: #001318;
+}
+
+#temp {
+    font-size: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
 }
